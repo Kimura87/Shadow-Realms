@@ -43,8 +43,8 @@ print("Você encontra um Goblin!")
 
 inimigo = "Goblin"
 vida_inimigo = 50
-ataque_inimigo = 10
-defesa_inimigo = 5
+ataque_inimigo = 30
+defesa_inimigo = 10git add RPG.py
 
 
 while vida_inimigo > 0 and vida > 0:
@@ -89,3 +89,9 @@ if vida_inimigo <= 0:
     print("========================")
     print("Você derrotou o Goblin!")
     print("Vida restante:", vida)
+
+if vida <= 0:
+    print("========================")
+    print("       GAME OVER")
+    print("========================")
+    print("Você foi derrotado pelo Goblin!")
