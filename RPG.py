@@ -3,33 +3,38 @@ print("      SHADOW REALMS")
 print("========================")
 
 print("Bem-vindo ao jogo!")
-print("Escolha sua classe:")
-print("1. Guerreiro")
-print("2. Mago")
-print("3. Arqueiro")
 
-classe = int(input("Digite sua escolha: "))
+while True:
+    print("Escolha sua classe:")
+    print("1. Guerreiro")
+    print("2. Mago")
+    print("3. Arqueiro")
 
-if classe == 1:
-    classe = "Guerreiro"
-    vida = 120
-    ataque = 25
-    defesa = 15
+    classe = int(input("Digite sua escolha: "))
 
-elif classe == 2:
-    classe = "Mago"
-    vida = 80
-    ataque = 15
-    defesa = 5
+    if classe == 1:
+        classe = "Guerreiro"
+        vida = 120
+        ataque = 25
+        defesa = 15
+        break
 
-elif classe == 3:
-    classe = "Arqueiro"
-    vida = 100
-    ataque = 20
-    defesa = 10
+    elif classe == 2:
+        classe = "Mago"
+        vida = 80
+        ataque = 15
+        defesa = 5
+        break
 
-else:
-    print("Escolha inválida!")
+    elif classe == 3:
+        classe = "Arqueiro"
+        vida = 100
+        ataque = 20
+        defesa = 10
+        break
+
+    else:
+        print("Escolha inválida!")
 
 
 print("Você escolheu a classe:", classe)
@@ -43,8 +48,8 @@ print("Você encontra um Goblin!")
 
 inimigo = "Goblin"
 vida_inimigo = 50
-ataque_inimigo = 30
-defesa_inimigo = 10git add RPG.py
+ataque_inimigo = 10
+defesa_inimigo = 5
 
 
 while vida_inimigo > 0 and vida > 0:
@@ -77,11 +82,12 @@ while vida_inimigo > 0 and vida > 0:
             print("O Goblin atacou você!")
             print("O Goblin causou", dano_inimigo, "de dano!")
             print("Sua vida agora é", vida)
+    elif acao == 2:
+         print("Você fugiu do Goblin!")
+         break
 
     else:
-        print("Você fugiu do Goblin!")
-        break
-
+     print("Escolha inválida!")
 
 if vida_inimigo <= 0:
     print("========================")
@@ -95,3 +101,4 @@ if vida <= 0:
     print("       GAME OVER")
     print("========================")
     print("Você foi derrotado pelo Goblin!")
+
