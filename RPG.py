@@ -36,7 +36,9 @@ while True:
     else:
         print("Escolha inválida!")
 
+xp = 0
 
+print("Agora você está pronto para começar sua aventura!")
 print("Você escolheu a classe:", classe)
 print("Sua vida é:", vida)
 print("Seu poder de ataque é:", ataque)
@@ -95,10 +97,11 @@ if vida_inimigo <= 0:
     print("========================")
     print("Você derrotou o Goblin!")
     print("Vida restante:", vida)
+    xp = xp +20
+    print("Você ganhou", xp, "XP!")
 
 if vida <= 0:
     print("========================")
     print("       GAME OVER")
     print("========================")
     print("Você foi derrotado pelo Goblin!")
-
